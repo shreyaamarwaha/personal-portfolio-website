@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio - Shreya Marwaha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="">
+                <ul>
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Services</a></li>
+                   <li><a href="#">Portfolio</a></li>
+                   <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p> Computer Science enthusiast</p>
+                <h1>I am <span>Shreya <br>Marwaha</span> From India.</h1>
+                <button class="btn">Hire Me</button>
+            </div>
+        </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/IMG_6223.jpeg" alt="me">
+            </div>
+            <div class="about-col-2">
+                   <h1 class:"sub-title" >About Me</h1>
+                   <p>Greetings! I'm Shreya Marwaha, a second-year B.Tech CS student specializing in Artificial Intelligence and Machine Learning. 
+                    My journey includes adept web development skills in HTML, CSS, Javascript and database integration, turning concepts into visually appealing websites. Currently refining my React Native skills for mobile app development, I aspire to excel in this dynamic landscape. Venturing into AI/ML, I've initiated projects like a movie recommendation system, bhagwadgitaGPT, showcasing a deepening understanding. In UI/UX design, I bring exceptional skills for optimal user experiences. Committed to continuous learning, I embrace challenges with an optimistic mindset, always striving for growth. 
+                    </p>
+            
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')" >Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')" >Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web-app development</li>
+                        <li><span>IIOT</span><br>Handling database connectivity</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>BhagwadgitaGPT</span><br><br>AI based chatbot to apmlify the sacred geeta text</li>
+                        <li><span>EcoSankalp</span><br><br>Comprehensice carbon footprint reduction for businesses</li>
+                        <li><span>ThreatSift</span><br><br>Detecting fake social media profiles</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>School</span><br>Manav Rachna International School sector-14 faridabad</li>
+                        <li><span>College</span><br>Manav rachna university<br><span2>(currently pursuing Btech CS with specialisation in AIML(2022-2026))</span2></li>
+                        <li><span>IIOT</span><br>Handling database connectivity</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <h2 class></h2>
+    </div>
+ </div>
+
+</div>
+    <script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+    for (var i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active-link");
+    }
+
+    for (var i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    var tabContent = document.getElementById(tabname);
+    tabContent.classList.add("active-tab");
+}
+
+
+    </script>
+
+</body>
+</html>
